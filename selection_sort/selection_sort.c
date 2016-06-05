@@ -8,7 +8,7 @@ int selection_sort(int *numbers, int length)
 	int i, j;
 	for(i = 0; i < length - 1; i++)
 	{
-		int *min = numbers + i;
+		int *min = numbers + i;	// Point to the first number that not sorted
 		for(j = i + 1; j < length; j++)
 		{
 			if(numbers[j] < *min)
